@@ -21,6 +21,8 @@ CREATE TABLE `groups` (
     `group_id` INT(10) AUTO_INCREMENT,
     `group_name` VARCHAR(20) NOT NULL,
     `group_description` VARCHAR(1000) DEFAULT "",
+    `works_vote` INT(10) DEFAULT 0,
+    `fails_vote` INT(10) DEFAULT 0,
     PRIMARY KEY (`group_id`)
 );
 
