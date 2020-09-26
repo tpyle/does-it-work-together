@@ -1,0 +1,15 @@
+{
+  "name": "diwt-server",
+  "version": "1.0.0",
+  "description": "A series of lambda functions for `does-it-work-together`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thomas Pyle",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "lambda-local": "^1.7.3",
+    "mysql": "^2.18.1"
+  }
+}
