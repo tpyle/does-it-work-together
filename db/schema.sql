@@ -4,6 +4,7 @@ USE does_it_work_together;
 CREATE TABLE `programs` (
     `program_id` INT(10) AUTO_INCREMENT,
     `program_name` VARCHAR(30) NOT NULL UNIQUE,
+    `program_description` VARCHAR(1000) DEFAULT "",
     PRIMARY KEY (`program_id`)
 );
 
