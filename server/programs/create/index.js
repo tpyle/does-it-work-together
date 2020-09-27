@@ -8,8 +8,8 @@ const headers = {
 
 exports.handler = (event) => {
     return new Promise((resolve, reject)=>{
-        const { program_name } = event.body;
-        db.query("INSERT INTO `programs`(`program_name`) VALUES (?)", [program_name], (err, data)=>{
+        const { program_name, program_description } = event.body;
+        db.query("INSERT INTO `programs`(`program_name`, `program_description`) VALUES (?, ?)", [program_name, program_description || ""], (err, data)=>{
             if (err) {
                 db.end();
                 return reject(err);
